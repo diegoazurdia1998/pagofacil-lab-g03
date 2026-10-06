@@ -33,9 +33,7 @@ Pega la salida real de estos comandos (bloque de código):
 |---|----------------------|-----------------------------|------------|-------------------------------|--------|-------|
 | 1 | tests/test_comision.py::test_monto_exacto_100_no_paga_comision | assert 1.5 == 0
 + where 1.5 = calcular_comision(100) | El valor de 100, no está incluido en > debe ser >= | Se cambió en > a >= | fix(comision): incluir Q100 en tramo 1 exento | diegoazurdia1998 |
-
 | 2 | tests/test_comision.py::test_tope_maximo_de_q25[3000],tests/test_comision.py::test_tope_maximo_de_q25[10000],tests/test_comision.py::test_tope_maximo_de_q25[1000000] | assert 30.0 == 25 + where 30.0 = calcular_comision(3000),assert 100.0 == 25 + where 100.0 = calcular_comision(10000), assert 10000.0 == 25 + where 10000.0 = calcular_comision(1000000) | La línea return round(comision, 2) no aplicaba el tope máximo de Q25 | return round(min(comision, TOPE_COMISION), 2) | Cambio tope 25 agregado | Pablo1211624 |
-
 | 3 | tests/test_total.py::test_total_incluye_la_comision[200-203.0], tests/test_total.py::test_total_incluye_la_comision[500-507.5] | assert 197.0 == 203.0,assert 492.5 == 507.5 | calcular_total restaba la comisión en lugar de sumarla, lo que contradice RN3 (total = monto + comisión) | return round(monto - comision, 2) → return round(monto + comision, 2) | fix(total): sumar comision al monto en calcular_total | gabrielajiizaaa |
 
 
