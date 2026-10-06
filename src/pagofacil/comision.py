@@ -33,7 +33,7 @@ def calcular_comision(monto):
         comision = monto * TASA_INTERMEDIA
     else:
         comision = monto * TASA_REDUCIDA
-    return round(comision, 2)
+    return round(min(comision, TOPE_COMISION), 2)
 
 
 def calcular_total(monto):
