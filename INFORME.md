@@ -71,10 +71,10 @@ Tabla de casos que diseñaron (mínimo 6 filas; indiquen la técnica):
 | Límite Tramo 3 | 1000.01 | 10.0 | Valores límite |
 | Tope de Comisión | 3000.0 | 25.0 | Valores límite |
 | Números Inválidos | 0, -10 | ValueError | Partición de equivalencia |
-| Tipos Inválidos | "100", None, True | TypeError | <Partición de equivalencia |
+| Tipos Inválidos | "100", None, True | TypeError | Partición de equivalencia |
 
-- **Resultado del marcador (mutantes detectados de 7):** *PENDIENTE*
-- **¿Qué mutantes sobrevivieron (si alguno) y qué caso de prueba les habría faltado?** *PENDIENTE*
+- **Resultado del marcador (mutantes detectados de 7):** *PENDIENTE, no se hizo en clase*
+- **¿Qué mutantes sobrevivieron (si alguno) y qué caso de prueba les habría faltado?** *PENDIENTE, no se hizo en clase*
 
 ## 6. Reflexión (5 a 8 líneas)
 
