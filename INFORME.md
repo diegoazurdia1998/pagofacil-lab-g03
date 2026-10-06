@@ -10,8 +10,11 @@
 
 | Integrante | Carnet | Usuario de GitHub |
 |------------|--------|-------------------|
-| <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> |
-| <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> |
+| Pablo Javier Gonzalez Perez | 1211624 | Pablo1211624 |
+| Diego Andres Azurdia Ortiz | 2528119 | diegoazurdia1998 |
+| Andrea Sofía Miranda Abrego | 1065824 | AndreaMiranda1065824 |
+| Jarod Michael Bolaños | 1251621 | jarod54654658 |
+| Gabriel Ajin | 1184924 | gabrielajiizaaa |
 
 ## 2. Evidencia
 
