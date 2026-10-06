@@ -43,7 +43,7 @@ def test_monto_invalido(monto_invalido):
 def test_tipo_invalido(tipo_invalido):
     with pytest.raises(TypeError):
         calcular_comision(tipo_invalido)
-=======
+
 # --- Tramo 1: sin comisión (hasta Q100 inclusive) ---
 @pytest.mark.parametrize(
     "monto, esperado",
