@@ -21,9 +21,8 @@
 Pega la salida real de estos comandos (bloque de código):
 
 `python -m pytest -q`
-```
-<<COMPLETAR>>
-```
+.......................                                              [100%]
+23 passed in 0.04s
 
 `git log v1.0.0..v1.0.1 --oneline --decorate`
 ```
@@ -35,7 +34,9 @@ Pega la salida real de estos comandos (bloque de código):
 | # | Pruebas que fallaban | Síntoma (mensaje del error) | Causa raíz | Corrección (qué línea cambió) | Commit | Quién |
 |---|----------------------|-----------------------------|------------|-------------------------------|--------|-------|
 | 1 | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> |
+
 | 2 | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> |
+
 | 3 | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> |
 
 **Pregunta:** al inicio había 6 pruebas fallando pero solo 3 defectos. ¿Por qué? ¿Qué diferencia hay entre *síntoma* y *causa raíz*?
