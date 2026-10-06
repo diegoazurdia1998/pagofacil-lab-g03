@@ -43,7 +43,7 @@ Pega la salida real de estos comandos (bloque de código):
 ## 4. Versionamiento
 
 1. Corrigieron 3 defectos sin cambiar la interfaz pública. ¿Por qué la nueva versión es `1.0.1` y no `1.1.0` ni `2.0.0`?
-   Por la misma estructura con la que se trabajan las etiquetas. Los cambios solo fueron correcciones sin cambiar la interfaz pública, por lo que solo se modifica el número dle final.
+   Por la misma estructura con la que se trabajan las etiquetas. Los cambios solo fueron correcciones sin cambiar la interfaz pública, por lo que solo se modifica el número del final.
 2. Si agregaran la función nueva `calcular_comision_con_iva(monto)` sin tocar nada existente, ¿qué versión sería y por qué?
    Sería la versión 1.1.0 porque ya no es corregir errores con funcionalidades actuales sino que es agregar una nueva funcionalidad sin cambiar completamente la interfaz.
 3. Si cambiaran `calcular_comision(monto)` para exigir un segundo parámetro obligatorio `moneda`, ¿qué versión sería y por qué?
