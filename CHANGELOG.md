@@ -5,6 +5,8 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y
 [Versionado Semántico](https://semver.org/lang/es/).
 
 ## [Sin publicar]
+### Corregido
+- `calcular_total` ahora suma la comisión al monto (antes la restaba), según RN3.
 
 ## [1.0.0]
 ### Agregado
