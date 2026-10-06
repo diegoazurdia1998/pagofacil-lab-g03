@@ -11,3 +11,11 @@ def test_menor_claro():
 
 def test_justo_18_es_mayor_de_edad():
     assert es_mayor_de_edad(18) is True
+
+
+import pytest
+
+
+@pytest.mark.parametrize("edad, esperado", [(17, False), (18, True), (19, True)])
+def test_frontera_de_edad(edad, esperado):
+    assert es_mayor_de_edad(edad) is esperado
