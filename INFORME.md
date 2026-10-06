@@ -5,8 +5,8 @@
 
 ## 1. Datos del equipo
 
-- **Equipo (gNN):** <<COMPLETAR>>
-- **Repositorio (URL):** <<COMPLETAR>>
+- **Equipo (gNN):** Grupo 03 - IA
+- **Repositorio (URL):** https://github.com/diegoazurdia1998/pagofacil-lab-g03
 
 | Integrante | Carnet | Usuario de GitHub |
 |------------|--------|-------------------|
@@ -65,15 +65,16 @@ Tabla de casos que diseñaron (mínimo 6 filas; indiquen la técnica):
 
 | Partición o límite que cubre | Entrada | Resultado esperado | Técnica |
 |------------------------------|---------|--------------------|---------|
-| <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> |
-| <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> |
-| <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> |
-| <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> |
-| <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> |
-| <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> | <<COMPLETAR>> |
+| Límite Tramo 1 | 100.0 |  0.0 | Valores límite |
+| Límite Tramo 2 | 100.01 | 1.50 | Valores límite |
+| Límite Tramo 2 (sup) | 1000.0 | 15.0 | Valores límite |
+| Límite Tramo 3 | 1000.01 | 10.0 | Valores límite |
+| Tope de Comisión | 3000.0 | 25.0 | Valores límite |
+| Números Inválidos | 0, -10 | ValueError | Partición de equivalencia |
+| Tipos Inválidos | "100", None, True | TypeError | <Partición de equivalencia |
 
-- **Resultado del marcador (mutantes detectados de 7):** <<COMPLETAR>>
-- **¿Qué mutantes sobrevivieron (si alguno) y qué caso de prueba les habría faltado?** <<COMPLETAR>>
+- **Resultado del marcador (mutantes detectados de 7):** *PENDIENTE*
+- **¿Qué mutantes sobrevivieron (si alguno) y qué caso de prueba les habría faltado?** *PENDIENTE*
 
 ## 6. Reflexión (5 a 8 líneas)
 
@@ -81,4 +82,4 @@ Su suite visible quedó 100 % en verde y, aun así, el duelo puede encontrar def
 ¿Qué implica eso para la estrategia de pruebas? Relaciónenlo con la pirámide de pruebas, con
 qué conviene automatizar y con el caso Knight Capital de la clase.
 
-<<COMPLETAR>>
+Como se menciona, que la suite visible quede 100% en verde no garantiza que no haya defectos escondidos porque solamente se pasaron cierta cantidad de pruebas, pudieron haber otras pruebas que se omitieron por lo que en esa área pueden haber errores no tan visibles. Esto implica que la estrategia de pruebas no debe confiarse solo de lo que esté en verde, sino que hay que diseñar casos de prueba específicos que puedan cubrir varios aspectos. La pirámide de pruebas ayuda a organizar eso. Conviene automatizar pruebas simples y unitarias. En cuanto al caso de Knight Capital, se puede relacionar con el laboratorio al evaluar la situación de pruebas que tuvieron debido a que perdieron mucho por no establecer un plan de pruebas correcto, hecho que se debe evitar. 
