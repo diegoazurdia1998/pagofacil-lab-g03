@@ -21,3 +21,25 @@ def test_ejemplo_monto_bajo():  # ejemplo que ya pasa; puedes borrarlo o conserv
 
 
 # --- Tus pruebas empiezan aquí ---
+# 1. Pruebas de tramos y valores límite de comisiones
+@pytest.mark.parametrize("monto, esperado", [
+    (100.0, 0.0),       # Límite superior Tramo 1 (hasta Q100 exento)
+    (100.01, 1.50),    # Límite inferior Tramo 2 (1.5%)
+    (1000.0, 15.0),    # Límite superior Tramo 2 (1.5%)
+    (1000.01, 10.0),   # Límite inferior Tramo 3 (1%)
+    (3000.0, 25.0),    # Tope máximo de comisión (Q25)
+])
+def test_comision_por_tramos(monto, esperado):
+    assert calcular_comision(monto) == esperado
+
+# 2. Pruebas para montos inválidos (<= 0)
+@pytest.mark.parametrize("monto_invalido", [0, -10])
+def test_monto_invalido(monto_invalido):
+    with pytest.raises(ValueError):
+        calcular_comision(monto_invalido)
+
+# 3. Pruebas para tipos de datos inválidos
+@pytest.mark.parametrize("tipo_invalido", ["100", None, True, False])
+def test_tipo_invalido(tipo_invalido):
+    with pytest.raises(TypeError):
+        calcular_comision(tipo_invalido)
